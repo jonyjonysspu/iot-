@@ -1,0 +1,59 @@
+Practical-2
+Title: Interface Raspberry Pi with DHT11/ BMP/BME sensor and upload data to a webpage using Node-Red
+Aim: To upload sensor data to a webpage using Node-Red  by Interfacing Raspberry Pi with DHT11/ BMP/BME sensor.
+
+Tools Used:
+Hardware: Raspberry Pi, DHT11 Temperature and Humidity Sensor, Jumper wires
+Software: Raspbian OS, Node-RED, Python with Adafruit_DHT library
+Development Tools: Terminal for running Python scripts and Node-RED, Node-RED editor for designing flows
+Concept of Experiment:
+Node-RED is a flow-based development tool that allows you to wire together hardware devices, APIs, and online services. In this experiment, Node-RED is used to receive data from the Raspberry Pi (via a Python script or MQTT), process it, and display the sensor readings on a webpage.
+Sensor data is collected by the Python script, transmitted and then Node-RED picks up this data and forwards it to a webpage for real-time monitoring.
+
+Procedure:
+1. Hardware Setup
+Connect the DHT11 sensor’s VCC to the 3.3V pin on the Raspberry Pi.
+Connect the sensor’s GND to one of the Raspberry Pi’s ground (GND) pins.
+Connect the DATA pin of the DHT11 sensor to a GPIO pin (for example, GPIO 4).
+2. Setting Up Node-RED
+Start Node-RED on the Raspberry Pi execute below command in Terminal
+node-red-start
+Open the Node-RED editor in your web browser (typically at http://127.0.0:1880).
+
+3. Node-RED Flow Design
+Create a new flow in Node-RED:
+Input Node: Use an MQTT node or an HTTP endpoint to receive data from the Python script.
+Processing Node: (Optional) Use a function node to format the data.
+Output Node: Use a dashboard node (such as ui_text or ui_gauge) to display the sensor readings on a webpage.
+4. Integrating Python with Node-RED
+Modify the Python script to publish data to an MQTT broker that Node-RED subscribes to.
+Ensure that Node-RED is configured to parse the incoming data correctly.
+
+
+Observations:
+1. Sensor Data:
+The Python script should reliably output temperature and humidity readings from the DHT11 sensor. Verify these readings on the terminal.
+
+2. Node-RED Dashboard:
+The dashboard should display live sensor data. Observe if the readings update in near real-time as per the sensor outputs.
+
+3. Communication:
+Confirm that the data flow between the Python script and Node-RED is functioning properly. Check for any errors or data delays.
+
+Calculations:
+Temperature and Humidity Conversion:
+The DHT11 sensor provides readings in digital form. The library handles conversion, but you might verify:
+Temperature in Celsius
+Humidity as a percentage
+Results:
+1. Real-time Data Display:
+The data from the DHT11 sensor is successfully transmitted to and displayed on a Node-RED dashboard webpage.
+
+2. Data Accuracy:
+The temperature and humidity values observed via the terminal match the readings on the Node-RED dashboard, confirming correct interfacing and data transfer.
+
+Conclusions:
+The experiment demonstrates the successful interfacing of the DHT11 sensor with a Raspberry Pi. The sensor data is correctly read using Python and uploaded to a webpage via Node-RED.
+
+Reference:
+https://iotstarters.com/building-node-red-dashboard-with-dht11-sensor/
