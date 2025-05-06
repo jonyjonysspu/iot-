@@ -1,0 +1,42 @@
+Skill-3:
+Aim: Interfacing Keypad, Pushbutton, Buzzer, and Display (LED, LCD, 8x8 Matrix LED) with Raspberry Pi
+Skills and Competencies Acquired:
+Understanding GPIO pins
+Working with libraries like RPi.GPIO
+Reading input from a pushbutton
+Controlling output devices
+Displaying text and patterns on LED
+Writing Python scripts in RPi
+Purpose of this Skill:
+To interface various input and output devices with a Raspberry Pi, enabling users to build interactive projects. By mastering these interfaces, one can develop applications like security systems, interactive displays, embedded control systems, and IoT applications.
+
+Resources Used in this Skill:
+Raspberry Pi, pushbutton, keypad, LED, buzzer, LCD, 8x8 LED matrix, jumper wires, breadboard, Raspbian OS, Python, Geany Python IDE
+
+Steps Performed in this Skill:
+
+1. Interfacing a Pushbutton with Raspberry Pi:
+Connect a pushbutton to the Raspberry Pi GPIO using a pull-up or pull-down resistor.
+Write a Python script using the RPi.GPIO library to detect button presses.
+Print messages or trigger actions (e.g., turning on an LED) upon button press.
+2. Interfacing a Keypad with Raspberry Pi:
+Use a 4x4 or 3x4 matrix keypad.
+Connect the keypad rows and columns to the GPIO pins.
+Write a Python script to scan key presses and decode the input using the Adafruit_MCP230xx library or custom logic.
+3. Interfacing a Buzzer with Raspberry Pi:
+Connect a piezo or active buzzer to a GPIO pin.
+Use PWM (Pulse Width Modulation) to control sound patterns.
+Write a Python script to generate beeps or tones on specific triggers.
+4. Interfacing an LED with Raspberry Pi:
+Connect an LED with a current-limiting resistor to a GPIO pin.
+Write a Python script to turn the LED on/off or blink it in different patterns.
+5. Interfacing an LCD Display with Raspberry Pi:
+Use an I2C or parallel 16x2 LCD.
+Connect the display to the Raspberry Pi’s I2C pins.
+Install and use the Adafruit_CharLCD library for controlling the display.
+Write a Python script to display text messages on the LCD.
+6. Interfacing an 8x8 LED Matrix with Raspberry Pi:
+Use a MAX7219-based 8x8 LED matrix.
+Connect it using SPI (Serial Peripheral Interface) pins.
+Install and use the luma.led_matrix Python library to control the display.
+Write a Python script to display patterns, scrolling text, or animations.
