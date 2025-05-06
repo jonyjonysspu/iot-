@@ -1,0 +1,46 @@
+Skill-5:
+Interface ESP32 with DHT11 sensor and upload data to a webpage using Blynk
+
+Skills/Competencies Acquired:
+Interfacing of DHT11 sensor
+Working with Blynk
+Configuring ESP32 Wi-Fi
+Writing Arduino code
+Sending sensor data to cloud
+
+Purpose of the Activity:
+This skill enables learners to interface temperature, humidity, and pressure sensors with an ESP32 Wi-Fi module and transmit real-time data to the Blynk cloud platform. The data can be monitored remotely through a web dashboard or mobile app, making it useful for weather monitoring, home automation, and IoT projects.
+
+Steps Performed in this Activity:
+1. Hardware Connections
+Connect the DHT11 sensor to the ESP32 GPIO pins.
+Ensure proper power supply (3.3V for ESP32, 3.3V/5V for sensors).
+Use pull-up resistors where necessary
+2. Software Setup
+Install Arduino IDE (or use MicroPython on Thonny IDE).
+Install required libraries (DHT, Adafruit BMP/BME, BlynkSimpleEsp32).
+Configure Blynk project and get an authentication token.
+3. Writing the Code
+Initialize ESP32 and connect it to Wi-Fi.
+Read temperature, humidity, and pressure from the sensor.
+Send the data to Blynk cloud using Blynk.virtualWrite().
+4. Upload and Run
+Compile and upload the code to ESP32.
+Monitor sensor values on the Blynk app.
+5. Real-Time Monitoring
+Use Blynk widgets to display live temperature, humidity, and pressure.
+Enable graph visualization for tracking trends over time.
+Resources & Tools Used:
+ESP32 (NodeMCU)
+DHT11 (Temperature & Humidity Sensor) or
+Jumper wires and Breadboard
+Arduino IDE with ESP32 Board Package
+Blynk IoT App (Android/iOS)
+Serial Monitor (for debugging sensor readings)
+Blynk Web Dashboard for online monitoring
+Skills Acquired:
+✅ IoT Integration
+✅ Embedded Systems Programming
+✅ Wireless Communication
+✅ Data Visualization
+✅ Sensor Interfacing
