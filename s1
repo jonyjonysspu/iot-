@@ -1,0 +1,28 @@
+Skill-1
+Title: Interfacing keypad, pushbutton, buzzer and display (LED, LCD, 8x8 matrix LED) with Arduino
+Skills/Competencies Acquired:
+1. Arduino
+2. Use of Keypad
+3. Use of Push Button
+4. Use of buzzer
+5. Use of LED/LCD Display
+
+Purpose of this Skill
+The purpose of this activity is to learn and demonstrate how to interface various components like a keypad, pushbutton, buzzer, and different types of displays (LED, LCD, 8x8 matrix LED) with an Arduino. By completing this project, you will gain hands-on experience in controlling input and output devices using the Arduino platform.
+
+Steps performed in this Skill
+Step 1: Setting up the Arduino environment
+Step 2: Connecting the Keypad
+Step 3: Connecting the Pushbutton
+Step 4: Connecting the Buzzer
+Step 5: Interfacing the LED Display
+
+Resources used in this skill
+Arduino Uno
+Arduino IDE
+Keypad
+Pushbutton
+Buzzer
+7-segment LED Display
+LCD Display
+Jumper wires and Breadboard
