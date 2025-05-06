@@ -1,0 +1,45 @@
+Skill-6
+Title: Interfacing ESP8266 with DHT11 Sensor and Uploading Data to ThingSpeak Webpage
+
+Purpose of the Activity:
+This activity aims to demonstrate the process of collecting environmental data (temperature, humidity, pressure) using sensors like DHT11 or BMP/BME280 and transmitting that data to ThingSpeak, a cloud-based IoT analytics platform. It builds hands-on skills in sensor interfacing, Wi-Fi-based communication using ESP8266, and cloud data visualization.
+
+Steps Performed in This Activity:
+1. Hardware Setup:
+Connect DHT11 or BMP/BME sensor to the ESP8266 board.
+
+2. Install below Libraries in Arduino IDE:
+DHT sensor library
+ThingSpeak library
+ESP8266WiFi library
+
+3. Setup ThingSpeak:
+Create an account on ThingSpeak.
+Create a new channel and add fields (e.g., temperature, humidity).
+Note your Write API Key.
+
+4. Write and Upload Arduino Code:
+Connect ESP8266 to Wi-Fi.
+Read sensor data.
+Use ThingSpeak.writeField() to send data to the cloud.
+Upload code and observe sensor data being updated in real-time on ThingSpeak dashboard.
+
+5. Monitor and Validate Output:
+Open Serial Monitor to check for connectivity and sensor reading.
+Login to ThingSpeak and view live graphs.
+
+Resources and Tools Used:
+1. ESP8266 NodeMCU
+2. DHT11 Sensor
+3. Jumper wires
+4. Breadboard
+5. USB Cable
+6. Arduino IDE
+7. ThingSpeak Platform
+
+Skills and Competencies Acquired:
+1. Interfacing ESP8266 with DHT11
+2. Connecting ESP8266 to Wifi
+3. Sending sensor data to ThingSpeak
+4. Creating ThingSpeak channels
+5. Real-time visualization of IoT data
