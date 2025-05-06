@@ -1,0 +1,40 @@
+Skill-2
+Aim: Interfacing various sensors and actuators with Arduino
+Skills/Competencies Acquired:
+1. Arduino
+2. Arduino IDE
+3. DHT 11 Sensor
+4. IR Sensor
+5. DC Motor
+
+Purpose of Skill:
+The purpose of this skill is to integrate and control sensors (such as DHT 11, IR) and actuators (such as a DC motor) using an Arduino. This will enable real-time sensing, processing, and control of physical systems. Understanding this skill involves working with microcontrollers to read sensor data, process it, and then interact with physical devices like motors or other actuators.
+
+Steps to Perform the Skill:
+
+1. Setting Up Arduino and Arduino IDE:
+- Install the Arduino IDE from (https://www.arduino.cc/en/software).
+- Connect your Arduino board (like Arduino Uno) to your computer using a USB cable.
+- Open the Arduino IDE and select the correct board and port under the Tools menu.
+
+
+2. Interfacing the DHT 11 Sensor:
+   - The DHT 11 sensor is a digital sensor that outputs temperature and humidity data.
+   - Connect the sensor to the Arduino:
+     - VCC to 5V
+     - GND to Ground
+     - Data Pin to a digital pin (for example, pin 2).
+   - Install the DHT sensor library in Arduino IDE: Sketch > Include Library > Manage Libraries > search for DHT sensor library and install it.
+   - Use the library functions to read and display data from the sensor.
+
+3. Interfacing the IR Sensor:
+   - An IR sensor detects infrared light, and can be used for motion sensing or object detection.
+   - Connect the IR sensor to Arduino:
+     - VCC to 5V
+     - GND to Ground
+     - OUT Pin to a digital pin (for example, pin 3).
+Displaying Arduino-DHT11_Circuit_Diagram.jpeg
+Arduino-DHT11_Circuit_Diagram.jpeg
+
+Arduino-IR_Circuit_Diagram.jpg
+Image
